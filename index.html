@@ -1,0 +1,272 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>task1 </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html{
+            scroll-behavior:smooth;
+        }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#66CDAA;
+            color:#513B1C;
+            line-height:1.6;
+        }
+        
+           header{
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("bg.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+}
+    
+        header h1{
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        header p{
+            font-size: 20px;
+        }
+        section{
+            padding:50px 10%;
+        }
+        h2{
+            color:#0f4c81;
+            margin-bottom:20px;
+            font-size:32px;
+            text-align: center;
+            position:relative;
+        }
+        h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#1e90ff;
+    display:block;
+    margin:10px auto;
+    border-radius:10px;
+}
+        .about{
+            text-align: center;
+            font-size: 18px;
+        }
+        .projects{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+            gap:25px;
+        }
+        .service{
+            background: white;
+            border-radius:12px;
+            overflow:hidden;
+            padding:20px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            transition:0.4s;
+        }
+        .service:hover{
+            transform: translateY(-5px);
+            box-shadow:0 12px 25px rgba(0,0,0,0.2);
+
+        }
+        .service img{
+            width:100%;
+            height:400px;
+            object-fit:cover;
+            border-radius: 7px;
+        }
+        .service h3{
+            margin:15px 0 10px;
+            color:#1e90ff;
+        }
+        .impact{
+            background: #e8f4ff;
+            border-radius: 15px;
+            text-align: center;
+            padding:40px;
+            font-size:18px;
+        }
+        .call{
+            text-align: center;
+            background:#0f4c81;
+            color: white;
+            padding:50px 20px;
+        }
+        .call button{
+            margin-top:20px;
+            padding:15px 30px;
+            border: none;
+            background: white;
+            color:#0f4c81;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+            font-weight:bold;
+        }
+        .call button:hover{
+            background:#1e90ff;
+            color:white;
+            transform:scale(1.05);
+        }
+        footer{
+            text-align:center;
+            background:#0b1320;
+            color:white;
+            padding:30px 20px;
+        }
+        .logo{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            margin-bottom:20px;
+            border:4px solid white;
+            transition:0.4s;
+        }
+        .logo:hover{
+            transform:scale(1.08) rotate(5deg);
+        }
+        .links{
+    margin-top:15px;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:0.3s;
+    padding:8px 15px;
+    border-radius:8px;
+}
+
+.links a:hover{
+    color:white;
+    background:#1e90ff;
+}
+nav{
+    background:#081b29;
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00bfff;
+}
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="#">Home</a>
+    <a href="#sec2">About</a>
+    <a href="#section1">Projects</a>
+    <a href="#section3">Impact</a>
+    <a href="#section4">Contact</a>
+</nav>
+    <header>
+        <img src="logo.jpg" class="logo">
+        <h1>InAmigos Foundation</h1>
+        <p> Uniting Minds for Change</p>
+    </header>
+    <section>
+          <div id="sec2">
+        <h2>About Our NGO </h2>
+      
+        <div class="about">
+            <p>InAmigos Foundation is a Section 8 registered non-profit organization founded on September 23, 2020, by Govind Shukla and based in Chhattisgarh, India. The foundation is certified with 80G, 12A, CSR-1, NITI Aayog registration, and ISO 9001:2015, ensuring transparency, accountability, and quality service. </p>
+        </div>
+        </div>
+    </section>
+    <section>
+        <h2>Our On going projects </h2>
+        <div id="section1">
+        <div class="projects">
+            
+            <div class="service">
+                <img src="seva.jpeg">
+                <h3>Seva</h3>
+                <p>Helping those in need with food,clothes,and essentials. </p>
+            </div>
+            <div class="service">
+                <img src="bachpan.jpeg">
+                <h3>Bachpanshala</h3>
+                <p>Providing education and care to underprivileged children.</p>
+            </div>
+            <div class="service">
+                <img src="dog.jpeg">
+                <h3>Jeev</h3>
+                <p>Supporting and rescuing animals .</p>
+            </div>
+            <div class="service">
+                <img src="women.jpeg">
+                <h3>Udaan</h3>
+                <p>Empowering women with skills and oppurtunities .</p>
+            </div>
+            <div class="service">
+                <img src="prakriti.jpeg">
+                <h3>Prakriti</h3>
+                <p>Protecting the environment through clean up drives and plantation</p>
+
+            </div>
+            <div class="service">
+                <img src="vikas.jpeg">
+                <h3>Vikas</h3>
+                <p> Helping youth like you grow through internships and skill-building</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Social Impact and Purpose of Projects </h2>
+        <div id="section3">
+        <div class="impact">
+            <p>The projects are designed to improve the lives of underprivileged communities and create a positive social impact across India. Through food distribution, education support, women empowerment, animal welfare, environmental conservation, and skill development programs, the foundation aims to promote equality, compassion, sustainability, and self-reliance. These initiatives help provide basic necessities, encourage learning opportunities, support financial independence, protect animals and nature, and enhance employment opportunities for individuals in need. The foundation believes that collective efforts and community participation can build a more inclusive, empowered, and socially responsible society.</p>
+        </div>
+        </div>
+    </section>
+    <section class="call">
+        <div id="section4">
+        <h2>Join Us </h2>
+        <p>Become a volunteer and help us build a better future for people</p>
+        <button>Join Now</button>
+        </div>
+    </section>
+    <footer>
+        <p> 2026 InAmigos Foundation ,Together we can create change</p>
+        <div class="links">
+            <a href="https://inamigosfoundation.org.in/" target="_blank"> <i class="fa-solid fa-globe"></i> Website</a>
+        
+        <a href="https://www.instagram.com/inamigos/?hl=en" target="_blank"><i class="fa-brands fa-instagram"> </i> Instagram</a>
+        <a href="https://in.linkedin.com/company/inamigos-foundation" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        </div>
+    </footer>
+
+</body>
+
+
+    </html>
